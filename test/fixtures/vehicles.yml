@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  owner: one
+  brand: MyString
+  model: 1
+  version: MyString
+  year: 1
+  plate: MyString
+  km: 1
+
+two:
+  owner: two
+  brand: MyString
+  model: 1
+  version: MyString
+  year: 1
+  plate: MyString
+  km: 1

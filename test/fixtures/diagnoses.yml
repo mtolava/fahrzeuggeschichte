@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  visit: one
+  description: MyString
+  resolution: MyString
+  cost_stimate: 1
+
+two:
+  visit: two
+  description: MyString
+  resolution: MyString
+  cost_stimate: 1

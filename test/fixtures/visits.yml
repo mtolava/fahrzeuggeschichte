@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vehicle: one
+  user: one
+  occurred_at: 2025-12-10 15:04:55
+  reason: MyText
+  km: 1
+  notes: MyText
+  status: MyString
+
+two:
+  vehicle: two
+  user: two
+  occurred_at: 2025-12-10 15:04:55
+  reason: MyText
+  km: 1
+  notes: MyText
+  status: MyString

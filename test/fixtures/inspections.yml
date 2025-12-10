@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  visit: one
+  type: 
+  description: MyString
+  severity: MyString
+
+two:
+  visit: two
+  type: 
+  description: MyString
+  severity: MyString
