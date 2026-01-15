@@ -1,0 +1,28 @@
+<div class="d-flex justify-content-between mb-3">
+  <h1>Dueños</h1>
+  <%= link_to "Nuevo dueño", new_owner_path, class: "btn btn-primary" %>
+</div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Documento</th>
+      <th>Teléfono</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @owners.each do |owner| %>
+      <tr>
+        <td><%= owner.name %></td>
+        <td><%= owner.document %></td>
+        <td><%= owner.phone %></td>
+        <td class="text-end">
+          <%= link_to "Ver", owner, class: "btn btn-sm btn-outline-secondary" %>
+          <%= link_to "Editar", edit_owner_path(owner), class: "btn btn-sm btn-outline-primary" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

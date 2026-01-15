@@ -1,0 +1,26 @@
+<h1>Vehículos</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Patente</th>
+      <th>Marca</th>
+      <th>Modelo</th>
+      <th>Dueño</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @vehicles.each do |v| %>
+      <tr>
+        <td><%= v.plate %></td>
+        <td><%= v.brand %></td>
+        <td><%= v.model %></td>
+        <td><%= v.owner.name %></td>
+        <td>
+          <%= link_to "Ver", v, class: "btn btn-sm btn-outline-secondary" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

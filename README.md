@@ -5,9 +5,9 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 3.3.10
 
-* System dependencies
+* System dependencies: postgresql 18, rvm, ubuntu, rails 8.1
 
 * Configuration
 

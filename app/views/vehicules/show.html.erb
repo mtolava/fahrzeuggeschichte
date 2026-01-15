@@ -1,0 +1,18 @@
+<h1><%= @vehicle.brand %> <%= @vehicle.model %></h1>
+
+<p><strong>Patente:</strong> <%= @vehicle.plate %></p>
+<p><strong>Dueño:</strong> <%= link_to @vehicle.owner.name, @vehicle.owner %></p>
+<p><strong>Kilometraje:</strong> <%= @vehicle.km %> km</p>
+
+<hr>
+
+<h3>Visitas</h3>
+<%= link_to "Nueva visita", new_visit_path(vehicle_id: @vehicle.id), class: "btn btn-primary mb-2" %>
+
+<ul class="list-group">
+  <% @vehicle.visits.each do |visit| %>
+    <li class="list-group-item">
+      <%= link_to visit.occurred_at.to_date, visit %> – <%= visit.reason %>
+    </li>
+  <% end %>
+</ul>

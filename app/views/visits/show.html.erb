@@ -1,0 +1,24 @@
+<h1>Visita <%= @visit.occurred_at.to_date %></h1>
+
+<p><strong>Vehículo:</strong> <%= link_to @visit.vehicle.plate, @visit.vehicle %></p>
+<p><strong>Motivo:</strong> <%= @visit.reason %></p>
+<p><strong>Kilometraje:</strong> <%= @visit.km %></p>
+
+<hr>
+
+<h3>Inspecciones</h3>
+<ul>
+  <% @visit.inspections.each do |i| %>
+    <li><strong><%= i.kind %>:</strong> <%= i.description %></li>
+  <% end %>
+</ul>
+
+<h3>Diagnósticos</h3>
+<ul>
+  <% @visit.diagnoses.each do |d| %>
+    <li>
+      <strong><%= d.description %></strong><br>
+      Acción recomendada: <%= d.recommended_action %>
+    </li>
+  <% end %>
+</ul>

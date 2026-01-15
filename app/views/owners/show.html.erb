@@ -1,0 +1,17 @@
+<h1><%= @owner.name %></h1>
+
+<p><strong>Documento:</strong> <%= @owner.document %></p>
+<p><strong>Teléfono:</strong> <%= @owner.phone %></p>
+
+<hr>
+
+<h3>Vehículos</h3>
+<%= link_to "Agregar vehículo", new_vehicle_path(owner_id: @owner.id), class: "btn btn-sm btn-primary mb-2" %>
+
+<ul class="list-group">
+  <% @owner.vehicles.each do |v| %>
+    <li class="list-group-item">
+      <%= link_to "#{v.brand} #{v.model} - #{v.plate}", v %>
+    </li>
+  <% end %>
+</ul>
